@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stars Mini App</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div>
+        <div class="title">Профиль</div>
+        <div class="sub" id="who">Загрузка…</div>
+      </div>
+      <div class="badge">
+        <div class="badge__label">Баланс</div>
+        <div class="badge__value"><span id="bal">0</span>⭐</div>
+      </div>
+    </header>
+
+    <main class="card">
+      <div class="row">
+        <div>
+          <div class="h">Пополнить звёзды</div>
+          <div class="p">Минимум: 1⭐</div>
+        </div>
+        <div class="chips">
+          <button class="chip" data-s="1">1</button>
+          <button class="chip" data-s="5">5</button>
+          <button class="chip" data-s="10">10</button>
+          <button class="chip" data-s="25">25</button>
+        </div>
+      </div>
+
+      <div class="row2">
+        <label class="inp">
+          <span>Сумма</span>
+          <input id="stars" type="number" min="1" value="1" inputmode="numeric" />
+        </label>
+        <button class="btn" id="payBtn">Оплатить Stars</button>
+      </div>
+
+      <div class="note" id="msg"></div>
+    </main>
+
+    <footer class="foot">
+      <div class="mini">Оплата проходит внутри Telegram ⭐</div>
+    </footer>
+  </div>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
